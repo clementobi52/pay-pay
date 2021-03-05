@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from btcfaucetpay.com/?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Feb 2021 06:26:13 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.html">
+    <link rel="stylesheet" type="text/css"
+        href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.html">
+    <script src='js/jquery-1.11.3.min.js'></script>
+    <script src='js/wow.js'></script>
+    <script>wow = new WOW(); wow.init();</script>
+</head>
+
+
+
+<script language=javascript>
+    function checkform() {
+        if (document.regform.fullname.value == '') {
+            alert("Please enter your full name!");
+            document.regform.fullname.focus();
+            return false;
+        }
+
+
+        if (document.regform.username.value == '') {
+            alert("Please enter your username!");
+            document.regform.username.focus();
+            return false;
+        }
+        if (document.regform.password.value == '') {
+            alert("Please enter your password!");
+            document.regform.password.focus();
+            return false;
+        }
+        if (document.regform.password.value != document.regform.password2.value) {
+            alert("Please check your password!");
+            document.regform.password2.focus();
+            return false;
+        }
+
+
+        if (document.regform.email.value == '') {
+            alert("Please enter your e-mail address!");
+            document.regform.email.focus();
+            return false;
+        }
+        if (document.regform.email.value != document.regform.email1.value) {
+            alert("Please retupe your e-mail!");
+            document.regform.email.focus();
+            return false;
+        }
+        if (document.regform.agree.checked == false) {
+            alert("You have to agree with the Terms and Conditions!");
+            return false;
+        }
+        return true;
+    }
+
+    function IsNumeric(sText) {
+        var ValidChars = "0123456789";
+        var IsNumber = true;
+        var Char;
+        if (sText == '') return false;
+        for (i = 0; i < sText.length && IsNumber == true; i++) {
+            Char = sText.charAt(i);
+            if (ValidChars.indexOf(Char) == -1) {
+                IsNumber = false;
+            }
+        }
+        return IsNumber;
+    }
+</script>
+
+
+
+
+
+
+<body>
+    <div id="other">
+        <div id="sub_other">
+            <div class="other_box">
+
+
+
+
+
+
+
+
+
+                <div class="regilwft">
+                    <form method=post onsubmit="return checkform()" name="regform"><input type="hidden" name="form_id"
+                            value="16131109451409"><input type="hidden" name="form_token"
+                            value="2a373e0a46ba10e99e17eb3e401c2ee0">
+                        <input type=hidden name=a value="signup">
+                        <input type=hidden name=action value="signup">
+                        <div class="alogo">
+                            <a href="indexbc14.html?a=home"><img src="img/log.png" width=250px height=90px /></a>
+                        </div>
+                        <div class="rhead">
+                            <p>Registration Your Account</p>
+                        </div>
+                        <div class="rborder">
+                            <img src="images/regborder.png" />
+                        </div>
+                        <div class="rboxall">
+                            <div class="ruser_one">
+                                <div class="ricon">
+                                    <img src="images/ruser.png" />
+                                </div>
+                                <div class="rboxr">
+                                    <div class="r_tittle">
+                                        <p>Full Name</p>
+                                    </div>
+                                    <div class="rtype">
+                                        <input type="text" name=fullname value='' />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="ruser_one">
+                                <div class="ricon">
+                                    <img src="images/ruser.png" />
+                                </div>
+                                <div class="rboxr">
+                                    <div class="r_tittle">
+                                        <p>Username</p>
+                                    </div>
+                                    <div class="rtype">
+                                        <input type="text" name=username value='' />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ruser_two">
+                                <div class="rleft">
+                                    <div class="ricon">
+                                        <img src="images/rpass.png" />
+                                    </div>
+                                    <div class="rboxra">
+                                        <div class="r_tittle">
+                                            <p>Define Password</p>
+                                        </div>
+                                        <div class="rtype" style="width:92.5%;">
+                                            <input type="Password" name=password value='' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rleft">
+                                    <div class="ricon">
+                                        <img src="images/rpass.png" />
+                                    </div>
+                                    <div class="rboxra">
+                                        <div class="r_tittle">
+                                            <p>Retype Password</p>
+                                        </div>
+                                        <div class="rtype" style="width:92.5%;">
+                                            <input type="Password" name=password2 value='' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ruser_one">
+                                <div class="ricon">
+                                    <img src="images/rmail.png" />
+                                </div>
+                                <div class="rboxr">
+                                    <div class="r_tittle">
+                                        <p>Email Address</p>
+                                    </div>
+                                    <div class="rtype">
+                                        <input type="text" name=email value='' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ruser_one">
+                                <div class="ricon">
+                                    <img src="images/rmail.png" />
+                                </div>
+                                <div class="rboxr">
+                                    <div class="r_tittle">
+                                        <p>Retype Email Address</p>
+                                    </div>
+                                    <div class="rtype">
+                                        <input type="text" name=email1 value='' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ruser_two">
+                                <div class="rleft">
+                                    <div class="ricon">
+                                        <img src="images/sq.png" />
+                                    </div>
+                                    <div class="rboxra">
+                                        <div class="r_tittle">
+                                            <p>Secret Question</p>
+                                        </div>
+                                        <div class="rtype" style="width:92.5%;">
+                                            <input type="text" name=sq value='' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rleft">
+                                    <div class="ricon">
+                                        <img src="images/sa.png" />
+                                    </div>
+                                    <div class="rboxra">
+                                        <div class="r_tittle">
+                                            <p>Secret Answer</p>
+                                        </div>
+                                        <div class="rtype" style="width:92.5%;">
+                                            <input type="text" name=sa value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ruser_one">
+                                <div class="ricon">
+                                    <i style="color: #f0b53a;font-size: 27px;" class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="rboxr">
+                                    <div class="r_tittle">
+                                        <p>Bitcoin Wallet Address:</p>
+                                    </div>
+                                    <div class="rtype">
+                                        <input type="text" name="pay_account[1000][Wallet Address]" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="terms_upline">
+                                <div class="check-text">
+                                    <div class="check-box">
+                                        <input type="checkbox" name=agree value=1>
+                                    </div>
+                                    <div class="agree">
+                                        <p>I agree with <span><a target="_blank" href="indexa972.html?a=rules">Terms and
+                                                    conditions </a></span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="submit">
+                                <input type="submit" value="REGISTER NOW" />
+                            </div>
+                            <div class="ruser_two">
+                                <div class="rleft">
+                                    <a href="indexbc14.html?a=home" class="a-link"><i class="fas fa-home"></i> Back To
+                                        Home</a>
+                                </div>
+                                <div class="rleft">
+                                    <a href="indexc30b.html?a=login" class="a-link"><i class="fas fa-sign-in-alt"></i>
+                                        User Log In</a>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+        </form>

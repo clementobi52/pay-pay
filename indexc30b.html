@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+  <!-- Page title -->
+  <title>Login btc-shine.org</title>
+
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css" />
+  <link rel="stylesheet" href="styles/pe-icons/helper.css" />
+  <link rel="stylesheet" href="styles/stroke-icons/style.css" />
+  <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body class="blank">
+
+  <!-- Wrapper-->
+  <div class="wrapper">
+
+
+    <!-- Main content-->
+    <section class="content">
+      <div class="back-link">
+        <a href="indexbc14.html?a=home" class="btn btn-accent">Back to Main Site</a>
+      </div>
+
+      <div class="container-center animated slideInDown">
+
+
+        <div class="view-header">
+          <div class="header-icon">
+            <i class="pe page-header-icon pe-7s-unlock"></i>
+          </div>
+          <div class="header-title">
+            <h3>Login</h3>
+            <small>
+              Please enter your credentials to login.
+            </small>
+          </div>
+        </div>
+
+        <div class="panel panel-filled">
+          <div class="panel-body">
+
+
+
+            <script language=javascript>
+              function checkform() {
+                if (document.mainform.username.value == '') {
+                  alert("Please type your username!");
+                  document.mainform.username.focus();
+                  return false;
+                }
+                if (document.mainform.password.value == '') {
+                  alert("Please type your password!");
+                  document.mainform.password.focus();
+                  return false;
+                }
+                return true;
+              }
+            </script>
+
+
+
+            <div class="form-block">
+
+              </font>
+
+
+
+              <form method=post name=mainform onsubmit="return checkform()"><input type="hidden" name="form_id"
+                  value="16131109458548"><input type="hidden" name="form_token"
+                  value="545c8e870a5aac16c41639e8a2fe4343"><input type="hidden" name="form_id"
+                  value="16029720794120"><input type="hidden" name="form_token"
+                  value="9936e813439d01fd39c3ab78c971f734">
+                <input type=hidden name=a value='do_login'>
+                <input type=hidden name=follow value=''>
+                <input type=hidden name=follow_id value=''>
+                <div class="form-group">
+                  <label class="control-label" for="username">Username</label>
+                  <input type="text" name=username value='' placeholder="Username" title="Please enter you username"
+                    required="" class="form-control">
+                  <span class="help-block small">Your unique username to app</span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="password">Password</label>
+                  <input type="password" name="password" title="Please enter your password" placeholder="******"
+                    required="" class="form-control">
+                  <span class="help-block small">Your strong password</span>
+                </div>
+                <div>
+
+                  <button type="submit" class="btn btn-accent">Login</button>
+                  <a class="btn btn-default" href="indexcca3.html?a=signup">Register</a>
+                  <a href="#" data-toggle="modal" data-target="#myModal">I forgot my password</a><br>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- End main content-->
+
+  </div>
+  <!-- End wrapper-->
+
+  <!-- Vendor scripts -->
+  <script src="vendor/pacejs/pace.min.js"></script>
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- App scripts -->
+  <script src="scripts/luna.js"></script>
+
+
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Recover Password</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post"><input type="hidden" name="form_id" value="16131109458548"><input type="hidden"
+              name="form_token" value="545c8e870a5aac16c41639e8a2fe4343"><input type="hidden" name="form_id"
+              value="16029720794120"><input type="hidden" name="form_token" value="9936e813439d01fd39c3ab78c971f734">
+
+            <div class="form-group has-feedback">
+              <input type="text" name="email" class="form-control" placeholder="Type your account email">
+              <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+
+
+        </div>
+        <input type="hidden" name="action" value="recover" />
+        <div class="row">
+          <div class="col-xs-8">
+
+          </div>
+
+          <div class="col-xs-4">
+            <input type="hidden" name="action" value="recover" />
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Reset Password</button>
+          </div>
+
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+
+
+
+</html>
